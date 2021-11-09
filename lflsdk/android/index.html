@@ -2,6 +2,7 @@
     <head>
         <title>LFLSDKDemo-Android</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <script type="text/javascript" src="qrcode.js"></script>
     </head>
     <body>
         <p>
@@ -12,9 +13,28 @@
         </p>
         <p>
             <b>在自带浏览器中打开当前页面后点击下面链接</b><br>
-            <a href="https://raw.fastgit.org/happytour/happytour.github.io/main/lflsdk/android/LFLSDKDemo.apk">点击下载LFLSDKDemo</a><br>
+            <a id="apkurl" href="https://raw.fastgit.org/happytour/happytour.github.io/main/lflsdk/android/LFLSDKDemo.apk">点击下载LFLSDKDemo</a><br>
         </p>
         <p>
+            <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
         </p>
+        <script type="text/javascript">
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                width : 100,
+                height : 100
+            });
+            
+            function makeCode () {		
+                var apkurl = document.getElementById("apkurl");
+                
+                if (!apkurl.href) {
+                    return;
+                }
+                
+                qrcode.makeCode(apkurl.href);
+            }
+
+            makeCode();
+            </script>
     </body>
 </html>
