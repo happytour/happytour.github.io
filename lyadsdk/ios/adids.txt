@@ -1,0 +1,155 @@
+iOS
+
+穿山甲
+
+appid
+5000546
+支持 普通开屏、模板插屏、模板激励视频、自渲染信息流、模板信息流、模板横幅
+
+// SDK
+#define normal_banner_ID                  @"900546859"
+#define normal_interstitial_ID            @"900546957"
+#define normal_reward_ID                  @"900546826"
+#define normal_reward_landscape_ID        @"900546319"
+#define normal_fullscreen_ID              @"900546299"
+#define normal_fullscreen_landscape_ID    @"900546154"
+#define normal_splash_ID                  @"800546808"
+
+#define native_feed_ID                    @"900546910"
+#define native_feed_image_ID              @"945019352" //This id 
+#define native_draw_ID                    @"900546588"
+#define native_banner_ID                  @"900546687"
+#define native_interstitial_ID            @"900546829"
+#define native_imagePortrait_ID           @"900546264"
+#define native_feed_custom_player_ID      @"900546910"
+#define native_paster_player_ID           @"945593048"
+
+/// 带_both代表海外国内通用的rit
+#define express_feed_ID                   @"945113159"
+//#define express_feed_video_ID             @"900546510"
+#define express_feed_video_ID             @"945294189"
+#define express_draw_ID                   @"900546881"
+#define express_banner_ID                 @"900546269"
+#define express_banner_ID_60090           @"900546269"
+#define express_banner_ID_640100          @"900546833"
+#define express_banner_ID_600150          @"900546198"
+#define express_banner_ID_690388          @"945509774" ///3400 change
+#define express_banner_ID_600260          @"900546387"
+#define express_banner_ID_600300          @"945509789" ///3400 change
+#define express_banner_ID_600400_both     @"945509785" ///3400 change
+#define express_banner_ID_600500_both     @"945509778" ///3400 change
+#define express_interstitial_ID           @"900546270"
+#define express_interstitial_ID_1_1_both  @"945509762" ///3400 change
+#define express_interstitial_ID_2_3_both  @"945509769" ///3400 change
+#define express_interstitial_ID_3_2_both  @"945509825" ///3400 change
+#define express_splash_ID                 @"800546851"
+#define express_full_ID_both              @"945113164"
+#define express_full_landscape_ID_both    @"945113165"
+#define express_reward_ID_both            @"945113162"
+#define express_reward_landscape_ID_both  @"945113163"
+
+广点通
+APPID
+1105344611
+
+普通开屏
+static NSString *IMAGE_AD_PLACEMENTID = @"9040714184494018";
+static NSString *VIDEO_AD_PLACEMENTID = @"8071800142568576";
+static NSString *VIDEO_ZOOMOUT_AD_PLACEMENTID = @"9011003132560597";
+
+插屏2.0
+static NSString *VIDEO_PLACEMENT_ID_STR = @"6050298509489032";
+static NSString *VIDEO_PLACEMENT_ID_STR = @"6050298509489032";
+
+激励视频
+static NSString *PORTRAIT_AD_PLACEMENTID = @"8020744212936426";
+static NSString *PORTRAIT_LANDSCAPE_AD_PLACEMENTID = @"9070098640008762";
+static NSString *MEDIATION_AD_PLACEMENTID = @"5040546242831432";
+
+自渲染2.0
+static NSString *ONE_BIGPHOTO_STR = @"2010198333498040";
+static NSString *ONE_SMALL_PHOTO_STR = @"6060695393196051";
+static NSString *ONE_WIDER_PHOTO_STR = @"4030598303592073";
+static NSString *THREE_PHOTO_OR_ONE_PHOTO_STR = @"2000566593234845";
+static NSString *ONE_BIG_WIDER_PHOTO_STR = @"1050394363190036";
+//video
+static NSString *ONE_LONGER_VIDEO_STR = @"3050349752532954";
+static NSString *THREE_VIDEO_OR_ONE_VIDEO_STR = @"5040995343496165";
+static NSString *ONE_WIDER_VIDEO_STR = @"7000593393992138";
+static NSString *ONE_WIDER_OR_LONGER_VIDEO_STR = @"2040594303892119";
+
+信息流模板（普通）
+static NSString *ABOVEPH_BLOWTEXT_STR = @"5030722621265924";
+static NSString *ABOVETEXT_BLOW_PH_STR = @"8010090333885456";
+static NSString *LEFTPH_RIHGTTEXT_STR = @"1080793303881448";
+static NSString *LEFTTEXT_RIGHTPH_STR = @"9050097313684512";
+static NSString *TWOPH_AND_TEXT_STR = @"5070297373087567";
+static NSString *WIDTHPHOTO_STR = @"5070791337820394";
+static NSString *HEIGHTPHOTO_STR = @"6090492353182599";
+static NSString *THREE_SMALLPH_STR = @"9050492343889611";
+static NSString *ABOVETEXT_SURFACE_BLOWPH_STR = @"9010495393982624";
+static NSString *ABOVEPH_BLOWTEXT_SURFACE_STR = @"6020493353488605";
+static NSString *TEXTSURFACE_ONEPHOTO_STR = @"3030690323789618";
+static NSString *HEIGHTERPHOTO_STR = @"6060290383380659";
+//video
+static NSString *ABOVEPH_BLOWTEXT_STR = @"1020922903364636";
+static NSString *ABOVETEXT_BLOW_PH_STR = @"1070493363284797";
+static NSString *TWOPH_AND_TEXT_STR = @"8070996313484739";
+static NSString *ONE_PHOTO_STR = @"1010197333187887";
+
+横幅2.0
+1080958885885321
+
+
+快手
+
+appid 
+90010
+
+开屏
+4000000041
+
+激励视频
+90010001
+
+全屏视频
+90010002
+
+Draw视频
+4000000028
+
+内容/内容入口
+90010005
+
+sigmob
+
+appID：6877,eccdcdbd9adbd4a7（appID与appkey逗号分割同安卓）
+开屏：ea1f8f9bd12
+激励视屏：ea1f8f7b662
+插屏：ea1f8fb93fb
+
+iqy
+
+appid：1631902728953860
+banner：1628916434182149
+激励视频：1648971881910406
+开屏：1628916481233030
+
+jd
+需模拟包名：com.jd.sdkceshiios
+支持开屏、插屏、信息流自渲染、信息流模版、横幅
+appid：665567
+开屏：2514
+插屏：2522
+信息流自渲染：2517
+信息流模版：2515
+横幅：2518
+
+baidu
+
+appid：ccb60059
+全屏视频：7339863
+banner：3722589
+插屏：2058554
+开屏：2058492
+激励视频：5889473

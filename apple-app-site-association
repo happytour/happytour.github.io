@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "45HZ3H9BTU.com.happytour.LYAdSDKDemo",
+                "paths": [ "*" ]
+            },
+            {
+                "appID": "45HZ3H9BTU.com.happytour.LFLSDKDemo",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
