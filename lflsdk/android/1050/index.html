@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>LFLSDKDemo-Android</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="../qrcode.js"></script>
+</head>
+
+<body>
+    <b>在自带浏览器中打开当前页面后点击下面链接或者扫码下载</b><br>
+    <p>
+        <a id="apkurl-debug"
+            href="http://211.154.195.102:8003/lfl/android/1050/common/105/debug/demo-debug.apk">通用资源包105测试服融合3.0</a><br>
+    </p>
+    <p>
+    <div id="qrcode-debug" style="width:100px; height:100px; margin-top:15px;"></div>
+    </p>
+    <p>
+        <a id="apkurl"
+            href="http://211.154.195.102:8003/lfl/android/1050/common/105/release/demo-release.apk">通用资源包105正式服融合3.0</a><br>
+    </p>
+    <p>
+    <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+    </p>
+    <p>
+        <a id="apkurl-b612-119"
+            href="http://211.154.195.102:8003/lfl/android/1050/b612/119/release/demo-release.apk">b612资源包119正式服融合3.0</a><br>
+    </p>
+    <p>
+    <div id="qrcode-b612-119" style="width:100px; height:100px; margin-top:15px;"></div>
+    </p>
+    <script type="text/javascript">
+        function makeCode() {
+            {
+                var apkurl = document.getElementById("apkurl-debug");
+                if (apkurl.href) {
+                    var qrcode = new QRCode(document.getElementById("qrcode-debug"), {
+                        width: 100,
+                        height: 100
+                    });
+                    qrcode.makeCode(apkurl.href);
+                }
+            }
+            {
+                var apkurl = document.getElementById("apkurl");
+                if (apkurl.href) {
+                    var qrcode = new QRCode(document.getElementById("qrcode"), {
+                        width: 100,
+                        height: 100
+                    });
+                    qrcode.makeCode(apkurl.href);
+                }
+            }
+            {
+                var apkurl = document.getElementById("apkurl-b612-119");
+                if (apkurl.href) {
+                    var qrcode = new QRCode(document.getElementById("qrcode-b612-119"), {
+                        width: 100,
+                        height: 100
+                    });
+                    qrcode.makeCode(apkurl.href);
+                }
+            }
+        }
+
+        makeCode();
+    </script>
+</body>
+
+</html>
