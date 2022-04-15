@@ -33,13 +33,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.happytour.LYAdSDKDemo</string>
+				<string>com.laole918.joyfun</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>LYAdSDKDemo</string>
+				<string>Joyfun</string>
 				<key>title</key>
-				<string>LYAdSDKDemo</string>
+				<string>Joyfun</string>
 			</dict>
 		</dict>
 	</array>
