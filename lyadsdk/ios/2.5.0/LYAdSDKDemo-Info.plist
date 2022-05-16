@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://211.154.195.102:8003/lyadsdk/ios/temp_joyfun/Joyfun.ipa</string>
+					<string>http://211.154.195.102:8003/lyadsdk/ios/2.5.0/LYAdSDKDemo.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -33,13 +33,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.laole918.joyfun</string>
+				<string>com.happytour.LYAdSDKDemo</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>Joyfun</string>
+				<string>LYAdSDKDemo</string>
 				<key>title</key>
-				<string>Joyfun</string>
+				<string>LYAdSDKDemo</string>
 			</dict>
 		</dict>
 	</array>
