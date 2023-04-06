@@ -47,6 +47,8 @@ appid
 #define express_full_landscape_ID_both    @"945113165"
 #define express_reward_ID_both            @"945113162"
 #define express_reward_landscape_ID_both  @"945113163"
+#define express_new_interstitial_half     @"947877457"
+#define express_new_interstitial_full     @"947866846"
 
 广点通
 APPID
@@ -60,12 +62,21 @@ static NSString *VIDEO_ZOOMOUT_AD_PLACEMENTID = @"9011003132560597";
 
 插屏2.0
 static NSString *VIDEO_PLACEMENT_ID_STR = @"6050298509489032";
-static NSString *VIDEO_PLACEMENT_ID_STR = @"6050298509489032";
+NSArray *posIDArray = @[
+                                  @[@"插屏图文", @"1050652855580392"],
+                                  @[@"插屏视频", VIDEO_PLACEMENT_ID_STR],
+                                  @[@"流量分配广告位", @"101369"],
+插屏视频
+NSArray *posIDArray = @[
+                                  @[@"插屏全屏视频广告位", @"1065727815330357"],
+                                  @[@"插屏激励广告位", @"1072203857043492"],
+                                  @[@"插屏全屏图文广告位", @"2012637049088974"],
+                                  @[@"流量分配广告位", @"101368"],                                  
 
 激励视频
 static NSString *PORTRAIT_AD_PLACEMENTID = @"8020744212936426";
 static NSString *PORTRAIT_LANDSCAPE_AD_PLACEMENTID = @"9070098640008762";
-static NSString *MEDIATION_AD_PLACEMENTID = @"5040546242831432";
+static NSString *MEDIATION_AD_PLACEMENTID = @"101366";
 
 自渲染2.0
 static NSString *ONE_BIGPHOTO_STR = @"2010198333498040";
@@ -92,11 +103,13 @@ static NSString *ABOVETEXT_SURFACE_BLOWPH_STR = @"9010495393982624";
 static NSString *ABOVEPH_BLOWTEXT_SURFACE_STR = @"6020493353488605";
 static NSString *TEXTSURFACE_ONEPHOTO_STR = @"3030690323789618";
 static NSString *HEIGHTERPHOTO_STR = @"6060290383380659";
+static NSString *Mediator_STR = @"100014";
 //video
 static NSString *ABOVEPH_BLOWTEXT_STR = @"1020922903364636";
 static NSString *ABOVETEXT_BLOW_PH_STR = @"1070493363284797";
 static NSString *TWOPH_AND_TEXT_STR = @"8070996313484739";
 static NSString *ONE_PHOTO_STR = @"1010197333187887";
+static NSString *Mediator_STR = @"100015";
 
 横幅2.0
 1080958885885321
@@ -129,8 +142,44 @@ Draw视频
 90010003
 
 信息流模板
-4000000008
-4000000010
+self.posIdArray = @[@"4000000007", @"4000000008", @"4000000009",
+                        @"4000000010", @"4000000011" /*, @"4000000012"*/];
+    KSADDemoAction *pod1 = [KSADDemoAction new];
+    pod1.name = @"浮层样式(4000000007)";
+
+    KSADDemoAction *pod2 = [KSADDemoAction new];
+    pod2.name = @"左文右图(4000000008)";
+
+    KSADDemoAction *pod3 = [KSADDemoAction new];
+    pod3.name = @"左图右文(4000000009)";
+
+    KSADDemoAction *pod4 = [KSADDemoAction new];
+    pod4.name = @"上文下视频(4000000010)";
+
+    KSADDemoAction *pod5 = [KSADDemoAction new];
+    pod5.name = @"上视频下文(4000000011)";
+    
+    KSADDemoAction *pod8 = [KSADDemoAction new];
+    pod8.name = @"三图样式(4000001344)";
+    
+    KSADDemoAction *pod9 = [KSADDemoAction new];
+    pod9.name = @"橱窗样式(4000001346)";
+    
+    KSADDemoAction *pod17 = [KSADDemoAction new];
+    pod17.name = @"竖版上文下图样式(4000001352)";
+    
+    KSADDemoAction *pod18 = [KSADDemoAction new];
+    pod18.name = @"竖版上图下文样式(4000001353)";
+    
+    KSADDemoAction *pod19 = [KSADDemoAction new];
+    pod19.name = @"竖版大图样式(4000001354)";
+
+    NSArray<KSADDemoAction *> *actionList = @[pod1, pod2, pod3, pod4, pod5, pod8, pod9, pod17, pod18, pod19];
+    
+    self.posIdArray = @[@"4000000007", @"4000000008", @"4000000009",
+                        @"4000000010", @"4000000011", @"4000001344",
+                        @"4000001346", @"4000001352", @"4000001353",
+                        @"4000001354"];
 
 sigmob
 
@@ -182,7 +231,7 @@ appid：5000546
 // SDK demo rit
 #define normal_reward_ID                @"945494747"
 #define normal_fullscreen_ID            @"945494752"
-#define normal_splash_ID1                @"887383142"
+#define normal_splash_ID1               @"887383142"
 #define normal_splash_ID2               @"887418500"
 #define native_feed_ID                  @"945494760"
 
@@ -190,10 +239,10 @@ appid：5000546
 #define express_feed_bidding_ID         @"945494761"
 #define express_banner_ID               @"945494753"
 #define express_interstitial_ID         @"945494755"
-#define express_fullscreen_ID           @"900546831"
+#define express_fullscreen_ID           @"945494751"
 #define express_fullscreen_landscape_ID @"945494751"
 #define express_reward_ID               @"945490586"
 #define express_reward_landscape_ID     @"945494739"
 
-#define interstitialPro_ID         @"946961656"
+#define interstitialPro_ID              @"946961656"
 #define draw_ID                         @"948388643"
